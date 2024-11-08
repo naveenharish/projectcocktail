@@ -1,3 +1,50 @@
+/* Fullscreen background with title centered */
+.full-screen-background {
+  position: relative;
+  height: 100vh;
+  background-image: url("./assets/cabin1.jpg"); /* Use your image path */
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-container {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Glacial Indifference', sans-serif;
+  letter-spacing: 0.2rem;
+  padding: 20px;
+  background-color: rgba(22, 55, 99, 0.85);
+}
+
+/* Sticky title on scroll */
+.title-container h1 {
+  margin: 0;
+}
+
+#container {
+  font-family: 'Glegoo', sans-serif;
+  text-align: center;
+  background-color: rgba(255, 239, 189, 0.85);
+  color: #4c241a;
+  padding: 20px;
+  
+}
+
+/* Sticky title */
+.title-container.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: rgba(22, 55, 99); /* Make it slightly opaque */
+  padding: 10px 0;
+  font-size: 2rem;
+}
 #title {
   color:white;
   font-family: 'Glacial Indifference', sans-serif;
@@ -6,13 +53,6 @@
   vertical-align: middle;
   line-height: 90px;
   letter-spacing: .2rem;
-}
-#container{
-
-font-family: 'Glegoo', sans-serif;
-text-align: center;
-background-color: rgba(255, 239, 189, 0.85);
-color:#4c241a
 }
 
 /* Container to control the overall carousel size */

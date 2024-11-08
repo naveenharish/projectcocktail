@@ -1,27 +1,30 @@
+import { useEffect } from 'react';
 import './App.css';
 import anishImage from './assets/anishpfp.png';
 import naveenImage from './assets/pfp.JPG';
 import CocktailMenu from './CocktailMenu';
 
 function App() {
+  useEffect(() => {
+    const title = document.querySelector(".title-container");
+
+    const handleScroll = () => {
+      if (window.scrollY > title.offsetTop + title.offsetHeight) {
+        title.classList.add("sticky");
+      } else {
+        title.classList.remove("sticky");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
-    <div
-    className="App"
-    style={{
-      backgroundImage: `url("${process.env.PUBLIC_URL}/cabin1.jpg")`,
-      backgroundPosition: "center center",
-      backgroundRepeat: "no-repeat",
-      backgroundAttachment: "fixed",
-      backgroundSize: "cover",
-      margin: 0,
-      padding: "20px",
-      color: "black",
-      minHeight: "100vh", // Ensures it covers the full viewport height
-    }}
-    >
-      <div id="title">
-        
-        <h1>PROJECT C.A.B.I.N</h1>
+    <div className="App">
+      <div className="full-screen-background">
+        <div className="title-container">
+          <h1>PROJECT C.A.B.I.N</h1>
+        </div>
       </div>
       <div id="container">
         <div id="host-section">
@@ -72,28 +75,4 @@ function App() {
   );
 }
 
-// function cocktailMenu() {
-//   const cocktails = [
-//     { name: "Cranberry Mule", image: cranImage, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." },
-//     { name: "White Pumpkin", image: pumpkinImage, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }, 
-//     { name: "Apple Jackrabbit", image: appleImage, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }, 
-//     { name: "Hot Buttered Rum", image: rumImage, description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." }
-//     // More items
-//   ];
-
-//   return (
-//     <ul className="cocktail-menu">
-//       {cocktails.map((cocktail, index) => (
-//         <li key={index} className="cocktail-item">
-//           <div className="cocktail-entry">
-//             <img src={cocktail.image} alt={cocktail.name} className="cocktail-image" />
-//             <h3 className="cocktail-name">{cocktail.name}</h3>
-//             <p className="cocktail-description">{cocktail.description}</p>
-//             <button className="order-button">Order Now</button>
-//           </div>
-//         </li>
-//       ))}
-//     </ul>
-//   );
-// }
 export default App;
