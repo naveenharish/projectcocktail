@@ -40,8 +40,8 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 10;
-  background-color: rgba(22, 55, 99); /* Make it slightly opaque */
+  z-index: 1000; 
+  background-color: rgba(22, 55, 99); 
   padding: 10px 0;
   font-size: 2rem;
 }
@@ -94,7 +94,10 @@
   font-size: 0.75rem; 
   margin: 0;
 }
-
+/* Carousel indicator z-index */
+.carousel-indicators {
+  z-index: 500; 
+}
 
 /* Host section styling */
 #host-section {
