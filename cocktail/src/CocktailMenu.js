@@ -5,10 +5,10 @@ import cranImage from './assets/Cranberry-Mule.webp';
 
 function CocktailMenu() {
   const cocktails = [
-    { name: "Cranberry Mule", image: cranImage, description: "The refreshingly spicy classic that we all know and love with a seasonal twist that'll make you say...wanna Sprite Cranberry?" },
-    { name: "White Pumpkin", image: pumpkinImage, description: "The White Girl Fall version of its Russian counterpart, this cocktail will surely bring a smile to your face and likes on your Pinterest board" }, 
-    { name: "Apple Jackrabbit", image: appleImage, description: "A very very boozy Caramel apple so make sure to keep this away from your kids...or not we love underage drinking!!!!" }, 
-    { name: "Hot Buttered Rum", image: rumImage, description: "I thought cocktails were supposed to be cold? Well you thought wrong, this rich and spicy draught is perfect for snuggling by the fireplace with that special someone in your life, but in this case the homies will more than suffice :)" }
+    { name: "Cranberry Mule", image: cranImage, description: 'The refreshingly spicy classic we all know and love, with a seasonal twist that’ll make you say… "Wanna Sprite Cranberry?"' },
+    { name: "White Pumpkin", image: pumpkinImage, description: "The 'White Girl Fall' version of its Russian counterpart, this cocktail is sure to bring a smile to your face and likes to your Pinterest board." }, 
+    { name: "Apple Jackrabbit", image: appleImage, description: 'A very, very boozy caramel apple—so be sure to keep this away from your kids… or not. We love underage drinking!' }, 
+    { name: "Hot Buttered Rum", image: rumImage, description: "I thought cocktails were supposed to be cold? Well, you thought wrong. This rich and spicy draught is perfect for snuggling by the fireplace with that special someone—but in this case, the homies will more than suffice. :)" }
   ];
 
   return (
