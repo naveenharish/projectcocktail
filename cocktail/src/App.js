@@ -29,7 +29,7 @@ function App() {
       <div id="container">
         <div id="host-section">
           <h3>Our Hosts</h3>
-          <div id="host-carousel" className="carousel slide" data-ride="carousel" data-interval="5000">
+          <div id="host-carousel" className="carousel slide" data-ride="carousel" data-interval="3000">
             <ol className="carousel-indicators">
               <li data-target="#host-carousel" data-slide-to="0" className="active"></li>
               <li data-target="#host-carousel" data-slide-to="1"></li>

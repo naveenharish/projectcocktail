@@ -25,7 +25,7 @@ function CocktailMenu() {
       name: "Apple Jackrabbit",
       image: appleImage,
       description:
-        "A very, very boozy caramel apple—so be sure to keep this away from your kids… or not. We love underage drinking!",
+        "A very, very boozy caramel apple—so be sure to keep this away from your kids… or not.",
     },
     {
       name: "Hot Buttered Rum",
