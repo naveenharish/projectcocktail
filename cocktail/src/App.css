@@ -3,15 +3,13 @@ h3,h4{
 }
 /* Fullscreen background with title centered */
 .full-screen-background {
-  position: relative;
-  height: 100vh;
   background-image: url("./assets/cabin1.jpg"); /* Use your image path */
   background-position: center;
-  background-size: cover;
+  background-size: contain; /* Change from "cover" to "contain" */
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
+
 }
 
 .title-container {
