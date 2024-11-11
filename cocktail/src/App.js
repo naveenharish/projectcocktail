@@ -37,14 +37,14 @@ function App() {
             <div className="carousel-inner">
               <div className="carousel-item active">
                 <img className="d-block w-100" src={anishImage} alt="First slide" />
-                <div className="carousel-caption d-none d-md-block">
+                <div className="carousel-caption">
                   <h5>Anish Babu</h5>
                   <p>Host</p>
                 </div>
               </div>
               <div className="carousel-item">
                 <img className="d-block w-100" src={naveenImage} alt="Second slide" />
-                <div className="carousel-caption d-none d-md-block">
+                <div className="carousel-caption">
                   <h5>Naveen Harish</h5>
                   <p>Lead Bartender</p>
                 </div>
