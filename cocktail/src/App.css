@@ -1,18 +1,23 @@
 h3,h4{
   font-weight: bold;
 }
-/* Fullscreen background with title centered */
+
 .full-screen-background {
-  position: relative;
-  height: 100vh;
   background-image: url("./assets/cabin1.jpg"); /* Use your image path */
   background-position: center;
-  background-size: cover;
+  background-size: cover; /* Cover for desktop */
+  background-repeat: no-repeat;
   background-attachment: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 100vh;
 }
+
+@media (max-width: 600px) { /* Adjust max-width as needed for mobile screens */
+  .full-screen-background {
+    background-size: contain; /* Contain for mobile to prevent zooming */
+    background-position: top; /* Optionally adjust position for better view on mobile */
+  }
+}
+
 
 .title-container {
   color: white;
