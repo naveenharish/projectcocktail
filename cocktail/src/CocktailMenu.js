@@ -55,7 +55,7 @@ function CocktailMenu() {
 
   const placeOrder = (drinkName) => {
     // Send order to backend
-    fetch("http://localhost:8080/api/order", {
+    fetch("https://swift-vicuna-cocktailnight-1cac85fe.koyeb.app/api/order", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -76,7 +76,7 @@ function CocktailMenu() {
 
   const connectToOrderUpdates = (orderId, drinkName) => {
     const eventSource = new EventSource(
-      `http://localhost:8080/api/customer/stream/${orderId}`
+      `https://swift-vicuna-cocktailnight-1cac85fe.koyeb.app/api/customer/stream/${orderId}`
     );
 
     eventSource.onmessage = (event) => {
